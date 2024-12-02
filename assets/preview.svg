@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <rect width="1200" height="630" fill="url(#paint0_linear)"/>
+    
+    <!-- Glassmorphic banner -->
+    <g filter="url(#filter0_b)">
+        <rect x="200" y="165" width="800" height="300" rx="16" fill="white" fill-opacity="0.7"/>
+    </g>
+    
+    <!-- Cookie icon -->
+    <circle cx="250" cy="225" r="30" fill="#2563eb"/>
+    <text x="235" y="240" font-family="Arial" font-size="35" fill="white">🍪</text>
+    
+    <!-- Title -->
+    <text x="300" y="235" font-family="Arial" font-weight="600" font-size="24" fill="#1f2937">Cookie Settings</text>
+    
+    <!-- Description -->
+    <text x="250" y="285" font-family="Arial" font-size="16" fill="#4b5563" width="700">
+        We use cookies to enhance your browsing experience and analyze our traffic.
+    </text>
+    
+    <!-- Buttons -->
+    <rect x="250" y="350" width="150" height="45" rx="8" fill="#2563eb"/>
+    <text x="280" y="380" font-family="Arial" font-weight="500" font-size="16" fill="white">Accept All</text>
+    
+    <rect x="420" y="350" width="150" height="45" rx="8" fill="white" stroke="#e5e7eb"/>
+    <text x="455" y="380" font-family="Arial" font-weight="500" font-size="16" fill="#1f2937">Reject All</text>
+    
+    <!-- Developer signature -->
+    <text x="600" y="550" font-family="Arial" font-weight="500" font-size="16" fill="white" text-anchor="middle">
+        Developed by Kevin Julu (Ghost)
+    </text>
+    
+    <!-- Definitions -->
+    <defs>
+        <!-- Background gradient -->
+        <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4f46e5"/>
+            <stop offset="100%" stop-color="#2563eb"/>
+        </linearGradient>
+        
+        <!-- Glassmorphism effect -->
+        <filter id="filter0_b" x="196" y="161" width="808" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+        </filter>
+    </defs>
+</svg>

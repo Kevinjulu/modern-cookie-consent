@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Cookie Consent Banner by Ghost</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/cookie-banner.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Modern Cookie Consent</h1>
+            <p>A beautiful, responsive cookie consent banner with glassmorphism design. Perfect for modern web applications.</p>
+            <div class="demo-buttons">
+                <button class="demo-btn primary-btn" onclick="document.querySelector('.cookie-banner').classList.add('show')">
+                    Show Cookie Banner
+                </button>
+                <button class="demo-btn secondary-btn" onclick="openCookieSettings()">
+                    Open Settings
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <div class="feature-title">Modern Design</div>
+            <div class="feature-description">
+                Beautiful glassmorphism effect with smooth animations and responsive layout.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-title">GDPR Compliant</div>
+            <div class="feature-description">
+                Detailed cookie preferences management with essential, analytics, and marketing categories.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <div class="feature-title">Responsive</div>
+            <div class="feature-description">
+                Works perfectly on all devices, from mobile phones to desktop computers.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-title">Easy Integration</div>
+            <div class="feature-description">
+                Simple to integrate with any website. Just include the CSS and JS files.
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <h2>Try It Yourself</h2>
+        <p>Experience the modern cookie consent banner in action.</p>
+        <div class="demo-buttons">
+            <a href="https://github.com/kevinjulu/modern-cookie-consent" class="demo-btn primary-btn" target="_blank">
+                View on GitHub
+            </a>
+            <button class="demo-btn secondary-btn" onclick="document.querySelector('.cookie-banner').classList.add('show')">
+                Reset Demo
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created with 💻 by <a href="https://github.com/kevinjulu" target="_blank">Kevin Julu (Ghost)</a></p>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-title">🍪 Cookie Settings</div>
+            <p class="cookie-text">
+                We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+            </p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn accept-btn" onclick="acceptCookies()">Accept All</button>
+            <button class="cookie-btn reject-btn" onclick="rejectCookies()">Reject All</button>
+            <button class="settings-btn" onclick="openCookieSettings()">Customize Settings</button>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="settings-modal" id="settingsModal">
+        <div class="modal-header">
+            <div class="modal-title">Cookie Preferences</div>
+            <button class="close-btn" onclick="closeCookieSettings()">&times;</button>
+        </div>
+        
+        <div class="cookie-type">
+            <div class="cookie-type-header">
+                <div>
+                    <h3>Essential Cookies</h3>
+                    <p>Required for the website to function properly. Cannot be disabled.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked disabled>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="cookie-type">
+            <div class="cookie-type-header">
+                <div>
+                    <h3>Analytics Cookies</h3>
+                    <p>Help us understand how visitors interact with our website.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="analyticsCookies">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="cookie-type">
+            <div class="cookie-type-header">
+                <div>
+                    <h3>Marketing Cookies</h3>
+                    <p>Used to deliver personalized advertisements.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="marketingCookies">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="cookie-type">
+            <div class="cookie-type-header">
+                <div>
+                    <h3>Personalization Cookies</h3>
+                    <p>Remember your preferences and provide enhanced features.</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="personalizationCookies">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <button class="save-preferences" onclick="saveCookiePreferences()">Save Preferences</button>
+    </div>
+
+    <script src="js/cookie-banner.js"></script>
+</body>
+</html>
